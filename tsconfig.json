@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "composite": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "plugins": [{ "name": "ts-css-modules-vite-plugin", "root": "./" }]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", ".eslintrc.cjs", "prettier.config.js", "vite.config.ts", "env.d.ts"],
+  "exclude": ["node_modules"]
+}

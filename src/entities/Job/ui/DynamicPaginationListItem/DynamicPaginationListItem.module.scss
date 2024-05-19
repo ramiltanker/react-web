@@ -1,0 +1,13 @@
+.box {
+    display: flex;
+    gap: 5px;
+}
+
+.card {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+
+    &:not(:last-of-type) {
+        margin-bottom: 0;
+    }
+}
